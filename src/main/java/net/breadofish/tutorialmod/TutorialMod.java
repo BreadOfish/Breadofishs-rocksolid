@@ -1,6 +1,7 @@
 package net.breadofish.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.breadofish.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -44,6 +45,8 @@ public class TutorialMod {
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -60,10 +63,11 @@ public class TutorialMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-        if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(EXAMPLE_BLOCK_ITEM);
-    }
+        if (event.getTab() == CreativeModeTabs.INGREDIENTS)
+            event.accept(ModItems.Amongus_Chunk);
 
+    }
+    //Puts the item in the creative menu, because forge decided to change it for some wierd reason
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
