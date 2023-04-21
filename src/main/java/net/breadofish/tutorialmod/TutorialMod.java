@@ -1,6 +1,8 @@
 package net.breadofish.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.breadofish.tutorialmod.block.ModBlock;
+import net.breadofish.tutorialmod.item.ModCreativeModeTabs;
 import net.breadofish.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -46,6 +48,7 @@ public class TutorialMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -63,8 +66,23 @@ public class TutorialMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-        if (event.getTab() == CreativeModeTabs.INGREDIENTS)
+        if (event.getTab() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.Amongus_Chunk);
+        }
+        if (event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.Quiver);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.TWEAK_TAB){
+            event.accept(ModItems.Amongus_Chunk);
+        }
+        if (event.getTab() == ModCreativeModeTabs.TWEAK_TAB){
+            event.accept(ModItems.Quiver);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.CooledMagmaBlock);
+        }
 
     }
     //Puts the item in the creative menu, because forge decided to change it for some wierd reason

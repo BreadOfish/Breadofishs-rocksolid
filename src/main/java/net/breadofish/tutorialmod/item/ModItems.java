@@ -1,6 +1,7 @@
 package net.breadofish.tutorialmod.item;
 
 import net.breadofish.tutorialmod.TutorialMod;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -14,8 +15,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MODID);
 
     public static final RegistryObject<Item> Amongus_Chunk = ITEMS.register("amogus",
+            () -> new Item(new Item.Properties().food(Foods.BEEF)));
+
+    public static final RegistryObject<Item> Quiver = ITEMS.register("quiver",
             () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+
 }
