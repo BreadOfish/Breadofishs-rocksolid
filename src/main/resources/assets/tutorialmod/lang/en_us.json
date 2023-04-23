@@ -2,5 +2,10 @@
   "__comment1__": "Data for the US English translation.",
   "item.tutorialmod.amogus": "Cooked Among us",
   "item.tutorialmod.quiver": "Quiver",
-  "block.tutorialmod.stone_glass": "Andersite framed glass"
+  "block.tutorialmod.stone_glass": "Andersite framed glass",
+  "block.tutorialmod.smooth_glass": "Smooth stone framed glass",
+  "block.tutorialmod.blackstone_glass": "Blackstone framed glass",
+  "block.tutorialmod.deepslate_glass": "deepslate framed glass",
+  "block.tutorialmod.diorite_glass": "diorite framed glass",
+  "block.tutorialmod.grante_glass": "grante framed glass"
 }

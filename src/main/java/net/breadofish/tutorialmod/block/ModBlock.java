@@ -22,8 +22,21 @@ public class ModBlock {
 
     //Andersite glass def statment
     public static final RegistryObject<Block> stone_glass = registryObject("stone_glass",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(3f).requiresCorrectToolForDrops()));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
+    public static final RegistryObject<Block> smooth_glass = registryObject("smooth_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
 
+    public static final RegistryObject<Block> blackstone_glass = registryObject("blackstone_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
+
+    public static final RegistryObject<Block> deepslate_glass = registryObject("deepslate_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
+    public static final RegistryObject<Block> deepslatebrick_glass = registryObject("deepslatebrick_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
+    public static final RegistryObject<Block> diorite_glass = registryObject("diorite_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
+    public static final RegistryObject<Block> grante_glass = registryObject("grante_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
     public static <T extends Block> RegistryObject<T> registryObject(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

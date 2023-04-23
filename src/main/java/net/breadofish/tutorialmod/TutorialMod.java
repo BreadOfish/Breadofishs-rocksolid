@@ -87,6 +87,31 @@ public class TutorialMod {
             event.accept(ModBlock.stone_glass);
         }
 
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.smooth_glass);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.blackstone_glass);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.deepslate_glass);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.deepslatebrick_glass);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.diorite_glass);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.grante_glass);
+        }
+
+
     }
 
 
@@ -101,6 +126,14 @@ public class TutorialMod {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             ItemBlockRenderTypes.setRenderLayer(ModBlock.stone_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.smooth_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.blackstone_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.deepslate_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.deepslatebrick_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.diorite_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.grante_glass.get(), RenderType.translucent());
+
+
         }
     }
 }
