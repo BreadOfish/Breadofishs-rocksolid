@@ -22,8 +22,8 @@ public class ModCreativeModeTabs {
                 builder -> builder.icon(() -> new ItemStack(ModItems.Quiver.get()))
                         .title(Component.translatable("misc")));
 
-        BLOCKS_TAB = event.registerCreativeModeTab(new ResourceLocation(TutorialMod.MODID, "tweaks"),
-                builder -> builder.icon(() -> new ItemStack(ModBlock.CooledMagmaBlock.get()))
+        BLOCKS_TAB = event.registerCreativeModeTab(new ResourceLocation(TutorialMod.MODID, "blocks"),
+                builder -> builder.icon(() -> new ItemStack(ModBlock.stone_glass.get()))
                         .title(Component.translatable("blocks")));
     }
 }

@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.breadofish.tutorialmod.block.ModBlock;
 import net.breadofish.tutorialmod.item.ModCreativeModeTabs;
 import net.breadofish.tutorialmod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -64,6 +66,7 @@ public class TutorialMod {
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
     }
 
+
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
         if (event.getTab() == CreativeModeTabs.INGREDIENTS){
@@ -81,10 +84,12 @@ public class TutorialMod {
         }
 
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.CooledMagmaBlock);
+            event.accept(ModBlock.stone_glass);
         }
 
     }
+
+
     //Puts the item in the creative menu, because forge decided to change it for some wierd reason
 
 
@@ -95,7 +100,7 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.stone_glass.get(), RenderType.translucent());
         }
     }
 }

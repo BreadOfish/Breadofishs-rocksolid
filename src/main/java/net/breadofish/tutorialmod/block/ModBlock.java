@@ -5,6 +5,8 @@ import net.breadofish.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,8 +20,10 @@ public class ModBlock {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MODID);
 
-    public static final RegistryObject<Block> CooledMagmaBlock = registryObject("cooled_magma",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f)));
+    //Andersite glass def statment
+    public static final RegistryObject<Block> stone_glass = registryObject("stone_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(3f).requiresCorrectToolForDrops()));
+
     public static <T extends Block> RegistryObject<T> registryObject(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
@@ -31,6 +35,8 @@ public class ModBlock {
                 new Item.Properties()));
     }
 
-    public static void register(IEventBus eventBus) {}
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
 
 }
