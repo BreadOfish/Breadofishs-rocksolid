@@ -15,6 +15,8 @@ public class ModCreativeModeTabs {
     public static CreativeModeTab TWEAK_TAB;
     public static CreativeModeTab BLOCKS_TAB;
 
+    public static CreativeModeTab ITEM_TAB;
+
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event){
         //Spaghetti code
@@ -25,5 +27,9 @@ public class ModCreativeModeTabs {
         BLOCKS_TAB = event.registerCreativeModeTab(new ResourceLocation(TutorialMod.MODID, "blocks"),
                 builder -> builder.icon(() -> new ItemStack(ModBlock.stone_glass.get()))
                         .title(Component.translatable("blocks")));
+
+        ITEM_TAB = event.registerCreativeModeTab(new ResourceLocation(TutorialMod.MODID, "items"),
+                builder -> builder.icon(() -> new ItemStack(ModBlock.stone_glass.get()))
+                        .title(Component.translatable("items")));
     }
 }

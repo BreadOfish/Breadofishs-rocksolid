@@ -37,6 +37,18 @@ public class ModBlock {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
     public static final RegistryObject<Block> grante_glass = registryObject("grante_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
+    public static final RegistryObject<Block> coalFrame = registryObject("coalFrame",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> copperFrame = registryObject("copperFrame",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> diamondFrame = registryObject("diamondFrame",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> goldenFrame = registryObject("goldenFrame",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ironFrame = registryObject("ironFrame",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> redstoneFrame = registryObject("redstoneFrame",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static <T extends Block> RegistryObject<T> registryObject(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -111,6 +111,38 @@ public class TutorialMod {
             event.accept(ModBlock.grante_glass);
         }
 
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.goldenFrame);
+        }
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.coalFrame);
+        }
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.copperFrame);
+        }
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.diamondFrame);
+        }
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.ironFrame);
+        }
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+            event.accept(ModBlock.redstoneFrame);
+        }
+        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
+            event.accept(ModItems.coalNugget);
+        }
+        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
+            event.accept(ModItems.copperNugget);
+        }
+        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
+            event.accept(ModItems.diamondNugget);
+        }
+        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
+            event.accept(ModItems.redstoneNugget);
+        }
+
+
 
     }
 
@@ -132,6 +164,11 @@ public class TutorialMod {
             ItemBlockRenderTypes.setRenderLayer(ModBlock.deepslatebrick_glass.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlock.diorite_glass.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlock.grante_glass.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.coalFrame.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.copperFrame.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.diamondFrame.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.ironFrame.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.redstoneFrame.get(), RenderType.translucent());
 
 
         }
