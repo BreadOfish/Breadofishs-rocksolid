@@ -112,22 +112,22 @@ public class TutorialMod {
         }
 
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.goldenFrame);
+            event.accept(ModBlock.goldenframe);
         }
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.coalFrame);
+            event.accept(ModBlock.coalframe);
         }
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.copperFrame);
+            event.accept(ModBlock.copperframe);
         }
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.diamondFrame);
+            event.accept(ModBlock.diamondframe);
         }
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.ironFrame);
+            event.accept(ModBlock.ironframe);
         }
         if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
-            event.accept(ModBlock.redstoneFrame);
+            event.accept(ModBlock.redstoneframe);
         }
         if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
             event.accept(ModItems.coalNugget);
@@ -164,11 +164,11 @@ public class TutorialMod {
             ItemBlockRenderTypes.setRenderLayer(ModBlock.deepslatebrick_glass.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlock.diorite_glass.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlock.grante_glass.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModBlock.coalFrame.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModBlock.copperFrame.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModBlock.diamondFrame.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModBlock.ironFrame.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModBlock.redstoneFrame.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.coalframe.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.copperframe.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.diamondframe.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.ironframe.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlock.redstoneframe.get(), RenderType.translucent());
 
 
         }

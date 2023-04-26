@@ -37,17 +37,17 @@ public class ModBlock {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
     public static final RegistryObject<Block> grante_glass = registryObject("grante_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops().explosionResistance(6000f)));
-    public static final RegistryObject<Block> coalFrame = registryObject("coalFrame",
+    public static final RegistryObject<Block> coalframe = registryObject("coalframe",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final RegistryObject<Block> copperFrame = registryObject("copperFrame",
+    public static final RegistryObject<Block> copperframe = registryObject("copperframe",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final RegistryObject<Block> diamondFrame = registryObject("diamondFrame",
+    public static final RegistryObject<Block> diamondframe = registryObject("diamondframe",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final RegistryObject<Block> goldenFrame = registryObject("goldenFrame",
+    public static final RegistryObject<Block> goldenframe = registryObject("goldenframe",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final RegistryObject<Block> ironFrame = registryObject("ironFrame",
+    public static final RegistryObject<Block> ironframe = registryObject("ironframe",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final RegistryObject<Block> redstoneFrame = registryObject("redstoneFrame",
+    public static final RegistryObject<Block> redstoneframe = registryObject("redstoneframe",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static <T extends Block> RegistryObject<T> registryObject(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

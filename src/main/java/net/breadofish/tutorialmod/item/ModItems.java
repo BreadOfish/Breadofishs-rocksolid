@@ -19,15 +19,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> Quiver = ITEMS.register("quiver",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> coalNugget = ITEMS.register("coalNugget",
+    public static final RegistryObject<Item> coalNugget = ITEMS.register("coalnugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> copperNugget = ITEMS.register("copperNugget",
+    public static final RegistryObject<Item> copperNugget = ITEMS.register("coppernugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> diamondNugget = ITEMS.register("diamondNugget",
+    public static final RegistryObject<Item> diamondNugget = ITEMS.register("diamondnugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> goldenNugget = ITEMS.register("goldenNugget",
+    public static final RegistryObject<Item> goldenNugget = ITEMS.register("goldennugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> redstoneNugget = ITEMS.register("redstoneNugget",
+    public static final RegistryObject<Item> redstoneNugget = ITEMS.register("redstonenugget",
             () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
