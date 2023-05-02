@@ -1,3 +1,6 @@
+Note: Most of this mod's contents are on the experimental branch, update 1.0 will bring the expiremental branch to the stable branch.
+
+
 how to open, edit, and play:
 =============================
 download the zip file from your branch of choice, and then open IntelliJ IDEA. Use the file tab to select the folder (remember to unzip it first), and now you have the source code loaded. 
