@@ -1,6 +1,8 @@
+WARNING: Out of date, will update to the e4.0 update today
+GO TO LINE 48 FOR INFO ABOUT THE EXPERIMENTAL BRANCH
 
 Source installation information for modders
--------------------------------------------
+=========================
 This code follows the Minecraft Forge installation methodology. It will apply
 some small patches to the vanilla MCP source code, giving you and it access 
 to some of the data and functions you need to build a successful mod.
@@ -10,7 +12,7 @@ SRG Names) - this means that you will not be able to read them directly against
 normal code.
 
 Setup Process:
-==============================
+=========================
 
 Step 1: Open your command-line and browse to the folder where you extracted the zip file.
 
@@ -31,7 +33,7 @@ run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean`
 {this does not affect your code} and then start the process again.
 
 Mapping Names:
-=============================
+=========================
 By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
 in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
 license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
@@ -44,3 +46,24 @@ Community Documentation: https://mcforge.readthedocs.io/en/latest/gettingstarted
 LexManos' Install Video: https://www.youtube.com/watch?v=8VEdtQLuLO0  
 Forge Forum: https://forums.minecraftforge.net/  
 Forge Discord: https://discord.gg/UvedJ9m  
+
+Experiemental Branch:
+===========================
+The experiemental branch is where new updates (or in this case the alpha) is stored. You can find the list of diffrences below:
+
+The experiemental branch is currently on [e0.3]:
+This update contains:
+   - Various stone framed glass blocks
+   - Missing nugget items (ie. other then gold and iron).
+   - An unfunctional quiver item.
+   - One secret item.
+ 
+To be implemented:
+   - Missing nether and end ores
+   - Better netherite process
+   - Missing stone ore varients (ie grante iron ore, diorite diamond ore, ect.)
+   - More plentiful ore generation (with the new stone variants and ore vains)
+   - Possibly a new armor type (Be alot of work to balance though)
+
+To be removed ([added] [planned on being removed]):
+   - [e0.3] [s0.3] The mineral framed glass blocks are just more expensive versions of pre-existing vannilla blocks. Either need a redesign, or a new functionality to stay in.
