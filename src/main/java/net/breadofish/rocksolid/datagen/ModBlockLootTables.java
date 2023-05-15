@@ -32,6 +32,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlock.framedsmglass.get());
         dropSelf(ModBlock.frameddioriteglass.get());
         dropSelf(ModBlock.framedandersiteglass.get());
+        dropSelf(ModBlock.deepslate_glass.get());
+        dropSelf(ModBlock.frameddeepslateglass.get());
+        dropSelf(ModBlock.stone_glass.get());
+        dropSelf(ModBlock.framedstoneglass.get());
+        dropSelf(ModBlock.framedblackstoneglass.get());
+        dropSelf(ModBlock.framedgranteglass.get());
+
+
+
 
         add(ModBlock.andersite_diamond.get(),
                 (block -> createOreDrop(ModBlock.andersite_diamond.get(), Items.DIAMOND)));

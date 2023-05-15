@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 //I didn't find out that this class existed until half way through development
 public class ModBlockStateProvider extends BlockStateProvider {
 
-    public ModBlockStateProvider(PackOutput output, String modid, ExistingFileHelper exFileHelper) {
+    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, rocksolid.MODID, exFileHelper);
     }
 

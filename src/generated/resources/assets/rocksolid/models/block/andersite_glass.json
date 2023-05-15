@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "rocksolid:block/framedandersiteglass"
+    "all": "rocksolid:block/andersite_glass"
   }
 }
