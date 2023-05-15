@@ -1,3 +1,4 @@
+WARNING: Out of date, will update to the e4.0 update today
 GO TO LINE 48 FOR INFO ABOUT THE EXPERIMENTAL BRANCH
 
 Source installation information for modders
