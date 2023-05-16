@@ -1,4 +1,3 @@
-WARNING: Out of date, will update to the e4.0 update today
 GO TO LINE 48 FOR INFO ABOUT THE EXPERIMENTAL BRANCH
 
 Source installation information for modders
@@ -51,19 +50,18 @@ Experiemental Branch:
 ===========================
 The experiemental branch is where new updates (or in this case the alpha) is stored. You can find the list of diffrences below:
 
-The experiemental branch is currently on [e0.3]:
+The experiemental branch is currently on [e4.4]:
 This update contains:
    - Various stone framed glass blocks
    - Missing nugget items (ie. other then gold and iron).
-   - An unfunctional quiver item.
    - One secret item.
- 
+   - Enderite tools
+   
+   
 To be implemented:
-   - Missing nether and end ores
    - Better netherite process
    - Missing stone ore varients (ie grante iron ore, diorite diamond ore, ect.)
    - More plentiful ore generation (with the new stone variants and ore vains)
-   - Possibly a new armor type (Be alot of work to balance though)
 
 To be removed ([added] [planned on being removed]):
-   - [e0.3] [s0.3] The mineral framed glass blocks are just more expensive versions of pre-existing vannilla blocks. Either need a redesign, or a new functionality to stay in.
+   [e0.1][s1] quiver, isn't in theme, plus has no functionality
