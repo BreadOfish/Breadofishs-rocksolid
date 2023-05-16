@@ -1,5 +1,6 @@
 package net.breadofish.rocksolid.datagen;
 
+import net.breadofish.rocksolid.item.ModItems;
 import net.breadofish.rocksolid.rocksolid;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +19,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //usage -> simpleItem(ModItems.(itemnamehere))
+
+
+
+
+
     }
 
     //Regular items
@@ -30,6 +36,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder handheldItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(rocksolid.MODID, "item/handheld" + item.getId().getPath()));
+                new ResourceLocation(rocksolid.MODID, "item/" + item.getId().getPath()));
     }
 }

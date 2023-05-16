@@ -1,0 +1,7 @@
+{
+  "#comment": "Data for the quiver texture",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "rocksolid:item/quiver"
+  }
+}
