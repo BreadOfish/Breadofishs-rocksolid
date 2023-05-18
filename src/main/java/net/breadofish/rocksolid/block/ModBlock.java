@@ -39,6 +39,9 @@ public class ModBlock {
     public static final RegistryObject<Block> grante_glass = registryObject("grante_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).explosionResistance(6000f)));
 
+    public static final RegistryObject<Block> tuffblock = registryObject("tuffblock",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+
     public static final RegistryObject<Block> andersite_diamond = registryObject("andersite_diamond",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).strength(.1f)));
     public static final RegistryObject<Block> diorite_diamond = registryObject("diorite_diamond",

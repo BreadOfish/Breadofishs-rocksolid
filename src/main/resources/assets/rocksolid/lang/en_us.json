@@ -28,7 +28,12 @@
   "item.rocksolid.enderiteingot": "Enderite Ingot",
   "item.rocksolid.enderitesword": "Enderite Sword",
   "item.rocksolid.enderitepickaxe": "Enderite Pickaxe",
-  "item.rocksolid.enderiteshovel": "Enderite Shovel"
+  "item.rocksolid.enderiteshovel": "Enderite Shovel",
+  "item.rocksolid.enderitehelmet": "Enderite Helmet",
+  "item.rocksolid.enderitechestplate": "Enderite Chestplate",
+  "item.rocksolid.enderiteleggings": "Enderite Shovel",
+  "item.rocksolid.enderiteboots": "Enderite Boots",
+  "block.rocksolid.tuffblock": "Polished tuff block"
 
 
 

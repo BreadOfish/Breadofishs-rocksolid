@@ -155,6 +155,22 @@ public class rocksolid {
         if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
             event.accept(ModItems.enderiteingot);
         }
+        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
+            event.accept(ModItems.enderiteboots);
+        }
+        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
+            event.accept(ModItems.enderitechestplate);
+        }
+        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
+            event.accept(ModItems.enderiteleggings);
+        }
+        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
+            event.accept(ModItems.enderiteboots);
+        }
+        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
+            event.accept(ModBlock.tuffblock);
+        }
+
     }
 
 

@@ -7,6 +7,7 @@ import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.MinecartItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
@@ -20,34 +21,42 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        //Drops self, well, drops itself
+        dropSelf(ModBlock.smooth_glass.get());
         dropSelf(ModBlock.andersite_glass.get());
+        dropSelf(ModBlock.stone_glass.get());
+        dropSelf(ModBlock.framedblackstoneglass.get());
         dropSelf(ModBlock.deepslate_glass.get());
         dropSelf(ModBlock.blackstone_glass.get());
-        dropSelf(ModBlock.deepslatebrick_glass.get());
+        dropSelf(ModBlock.tuffblock.get());
         dropSelf(ModBlock.diorite_glass.get());
-        dropSelf(ModBlock.grante_glass.get());
-        dropSelf(ModBlock.smooth_glass.get());
-        dropSelf(ModBlock.frameddioriteglass.get());
-        dropSelf(ModBlock.framedsmglass.get());
-        dropSelf(ModBlock.frameddioriteglass.get());
-        dropSelf(ModBlock.framedandersiteglass.get());
-        dropSelf(ModBlock.deepslate_glass.get());
-        dropSelf(ModBlock.frameddeepslateglass.get());
-        dropSelf(ModBlock.stone_glass.get());
-        dropSelf(ModBlock.framedstoneglass.get());
-        dropSelf(ModBlock.framedblackstoneglass.get());
         dropSelf(ModBlock.framedgranteglass.get());
+        dropSelf(ModBlock.framedstoneglass.get());
+        dropSelf(ModBlock.frameddeepslateglass.get());
+        dropSelf(ModBlock.framedandersiteglass.get());
+        dropSelf(ModBlock.framedblackstoneglass.get());
+        dropSelf(ModBlock.frameddioriteglass.get());
+        dropSelf(ModBlock.deepslate_glass.get());
+        dropSelf(ModBlock.deepslatebrick_glass.get());
+        dropSelf(ModBlock.framedsmglass.get());
+        dropSelf(ModBlock.grante_glass.get());
+        dropOther(ModBlock.andersite_diamond.get(), Items.DIAMOND);
+        dropOther(ModBlock.diorite_diamond.get(), Items.DIAMOND);
+        dropOther(ModBlock.granite_diamond.get(), Items.DIAMOND);
 
 
 
 
-        add(ModBlock.andersite_diamond.get(),
-                (block -> createOreDrop(ModBlock.andersite_diamond.get(), Items.DIAMOND)));
-        add(ModBlock.diorite_diamond.get(),
-                (block -> createOreDrop(ModBlock.diorite_diamond.get(), Items.DIAMOND)));
-        add(ModBlock.granite_diamond.get(),
-                (block -> createOreDrop(ModBlock.granite_diamond.get(), Items.DIAMOND)));
+
+
+
+
+
+
+
+
+
+
+
 
     }
     @Override

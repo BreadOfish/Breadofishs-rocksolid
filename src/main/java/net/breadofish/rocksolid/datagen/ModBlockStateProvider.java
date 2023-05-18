@@ -19,6 +19,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         //usage -> blockWithItem();
         blockWithItem(ModBlock.andersite_glass);
+        blockWithItem(ModBlock.andersite_diamond);
+        blockWithItem(ModBlock.blackstone_glass);
+        blockWithItem(ModBlock.deepslate_glass);
+        blockWithItem(ModBlock.diorite_glass);
+        blockWithItem(ModBlock.deepslate_glass);
+        blockWithItem(ModBlock.deepslatebrick_glass);
+        blockWithItem(ModBlock.diorite_diamond);
+        blockWithItem(ModBlock.framedandersiteglass);
+        blockWithItem(ModBlock.framedblackstoneglass);
+        blockWithItem(ModBlock.frameddeepslateglass);
+        blockWithItem(ModBlock.framedsmglass);
+        blockWithItem(ModBlock.framedgranteglass);
+        blockWithItem(ModBlock.framedandersiteglass);
+        blockWithItem(ModBlock.frameddioriteglass);
+        blockWithItem(ModBlock.framedstoneglass);
+        blockWithItem(ModBlock.tuffblock);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -20,7 +20,7 @@ public class ModCreativeModeTabs {
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event){
         //Spaghetti code
         TOOLS_TAB = event.registerCreativeModeTab(new ResourceLocation(rocksolid.MODID, "tools"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.Quiver.get()))
+                builder -> builder.icon(() -> new ItemStack(ModItems.enderitesword.get()))
                         .title(Component.translatable("tools")));
 
         BLOCKS_TAB = event.registerCreativeModeTab(new ResourceLocation(rocksolid.MODID, "blocks"),

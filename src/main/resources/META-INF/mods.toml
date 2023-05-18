@@ -29,7 +29,7 @@ displayName="Rock Solid!" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="BreadOfish, Mrs. (Emilly) Holliday for teaching me java for free*, Jackson Carver for being cool, and Brandon Eng for being Brandon Eng" #optional
+credits="@BreadOfish " #optional
 # A text field displayed in the mod UI
 authors="BreadOfish" #optional
 # Display Test controls the display for your mod in the server connection screen

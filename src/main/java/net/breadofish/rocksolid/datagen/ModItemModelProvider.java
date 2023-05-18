@@ -1,14 +1,18 @@
 package net.breadofish.rocksolid.datagen;
 
+import net.breadofish.rocksolid.block.ModBlock;
 import net.breadofish.rocksolid.item.ModItems;
 import net.breadofish.rocksolid.rocksolid;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 public class ModItemModelProvider extends ItemModelProvider {
 
@@ -19,8 +23,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //usage -> simpleItem(ModItems.(itemnamehere))
-
-
 
 
 
