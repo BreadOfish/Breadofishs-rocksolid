@@ -43,11 +43,12 @@ public class ModBlock {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)));
 
     public static final RegistryObject<Block> andersite_diamond = registryObject("andersite_diamond",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).strength(.1f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
     public static final RegistryObject<Block> diorite_diamond = registryObject("diorite_diamond",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).strength(.1f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
     public static final RegistryObject<Block> granite_diamond = registryObject("granite_diamond",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).strength(.1f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(.1f)));
+
     public static final RegistryObject<Block> frameddeepslateglass = registryObject("frameddeepslateglass",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(.1f)));
 

@@ -38,7 +38,7 @@ public class ModItems {
 
     //Im regretting my life choices (Enderite tools)
     public static final RegistryObject<AxeItem> enderiteaxe = ITEMS.register("enderiteaxe",
-            () -> new AxeItem(ModTiers.ENDERITE, 3, 1f, new Item.Properties()));
+            () -> new AxeItem(ModTiers.ENDERITE, 12, 3f, new Item.Properties()));
 
     public static final RegistryObject<SwordItem> enderitesword = ITEMS.register("enderitesword",
             () -> new SwordItem(ModTiers.ENDERITE, 2, 2.5f, new Item.Properties()));

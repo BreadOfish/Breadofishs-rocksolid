@@ -156,7 +156,7 @@ public class rocksolid {
             event.accept(ModItems.enderiteingot);
         }
         if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderiteboots);
+            event.accept(ModItems.enderitehelmet);
         }
         if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
             event.accept(ModItems.enderitechestplate);
@@ -167,9 +167,10 @@ public class rocksolid {
         if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
             event.accept(ModItems.enderiteboots);
         }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.tuffblock);
         }
+
 
     }
 
