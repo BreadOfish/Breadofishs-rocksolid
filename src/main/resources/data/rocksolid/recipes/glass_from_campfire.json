@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "ingredient": {
+        "item": "minecraft:sand"
+    },
+    "result": "minecraft:glass",
+    "experience": 0.1,
+    "cookingtime": 1000
+}

@@ -27,7 +27,7 @@ displayName="Rock Solid!" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="rocksolidlogo.png" #optional
 # A text field displayed in the mod UI
 credits="@BreadOfish " #optional
 # A text field displayed in the mod UI
@@ -41,7 +41,7 @@ authors="BreadOfish" #optional
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Rock solid! Is a tiny mod that aims to make i
+description='''Rock solid is a small mod that adds in new blocks, items, and even a new armor set!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.rocksolid]] #optional

@@ -24,6 +24,7 @@ public class ModBlock {
 
     public static final RegistryObject<Block> stone_glass = registryObject("stone_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).explosionResistance(6000f)));
+
     public static final RegistryObject<Block> smooth_glass = registryObject("smooth_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion().strength(2f).explosionResistance(6000f)));
 
@@ -47,7 +48,7 @@ public class ModBlock {
     public static final RegistryObject<Block> diorite_diamond = registryObject("diorite_diamond",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
     public static final RegistryObject<Block> granite_diamond = registryObject("granite_diamond",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(.1f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
 
     public static final RegistryObject<Block> frameddeepslateglass = registryObject("frameddeepslateglass",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(.1f)));

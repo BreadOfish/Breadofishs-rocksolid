@@ -69,107 +69,46 @@ public class rocksolid {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-        //This code sucks and I hate it.
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
+        //This code sucks slightly less and I hate it.
+        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB) {
             event.accept(ModBlock.stone_glass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.smooth_glass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.blackstone_glass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.deepslate_glass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.deepslatebrick_glass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.diorite_glass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.grante_glass);
-        }
-        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
-            event.accept(ModItems.coalNugget);
-        }
-        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
-            event.accept(ModItems.copperNugget);
-        }
-        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
-            event.accept(ModItems.diamondNugget);
-        }
-        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
-            event.accept(ModItems.redstoneNugget);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.andersite_diamond);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.granite_diamond);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.diorite_diamond);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.frameddeepslateglass);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.framedandersiteglass);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.framedgranteglass);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.framedblackstoneglass);
-        }
-
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.framedsmglass);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.framedblackstoneglass);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderiteaxe);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderitehoe);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderitesword);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderitepickaxe);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderiteshovel);
-        }
-        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB){
-            event.accept(ModItems.enderiteingot);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderitehelmet);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderitechestplate);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderiteleggings);
-        }
-        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB){
-            event.accept(ModItems.enderiteboots);
-        }
-        if (event.getTab() == ModCreativeModeTabs.BLOCKS_TAB){
             event.accept(ModBlock.tuffblock);
         }
+
+        if (event.getTab() == ModCreativeModeTabs.ITEM_TAB) {
+            event.accept(ModItems.coalNugget);
+            event.accept(ModItems.copperNugget);
+            event.accept(ModItems.diamondNugget);
+            event.accept(ModItems.redstoneNugget);
+            event.accept(ModItems.enderiteingot);
+        }
+        if (event.getTab() == ModCreativeModeTabs.TOOLS_TAB) {
+            event.accept(ModItems.enderiteaxe);
+            event.accept(ModItems.enderitehoe);
+            event.accept(ModItems.enderitesword);
+            event.accept(ModItems.enderitepickaxe);
+            event.accept(ModItems.enderiteshovel);
+            event.accept(ModItems.enderitehelmet);
+            event.accept(ModItems.enderitechestplate);
+            event.accept(ModItems.enderiteleggings);
+            event.accept(ModItems.enderiteboots);
+        }
+
 
 
     }

@@ -38,10 +38,10 @@ public class ModItems {
 
     //Im regretting my life choices (Enderite tools)
     public static final RegistryObject<AxeItem> enderiteaxe = ITEMS.register("enderiteaxe",
-            () -> new AxeItem(ModTiers.ENDERITE, 12, 3f, new Item.Properties()));
+            () -> new AxeItem(ModTiers.ENDERITE, 2.5f, -2.5f, new Item.Properties()));
 
     public static final RegistryObject<SwordItem> enderitesword = ITEMS.register("enderitesword",
-            () -> new SwordItem(ModTiers.ENDERITE, 2, 2.5f, new Item.Properties()));
+            () -> new SwordItem(ModTiers.ENDERITE, 3, 2.5f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> enderitepickaxe = ITEMS.register("enderitepickaxe",
             () -> new PickaxeItem(ModTiers.ENDERITE, 0, 0.1f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> enderiteshovel = ITEMS.register("enderiteshovel",
