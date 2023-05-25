@@ -1,5 +1,4 @@
-Note: Most of this mod's contents are on the experimental branch, update 1.0 will bring the expiremental branch to the stable branch.
-
+Note: Currently, the 1.0 source code is in the master branch, will fix soon
 
 how to open, edit, and play:
 =============================
